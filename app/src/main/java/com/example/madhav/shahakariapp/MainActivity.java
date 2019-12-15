@@ -12,19 +12,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable() {
             public void run() {
-                // TODO: Your application init goes here.
-
-//                Intent mInHome = new Intent(MainActivity.this, LoginActivity.class);
-//                MainActivity.this.startActivity(mInHome);
-//                MainActivity.this.finish();
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-                overridePendingTransition(R.transition.fade_in,R.transition.fade_out);
-
 
             }
         }, 3000);

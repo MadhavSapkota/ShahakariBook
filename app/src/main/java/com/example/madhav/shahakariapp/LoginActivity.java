@@ -62,8 +62,8 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         //Getting instance of firebaseauth
-        database = FirebaseDatabase.getInstance();
-        student = database.getReference("LoginStudent");
+//        database = FirebaseDatabase.getInstance();
+//        student = database.getReference("LoginStudent");
 
 
         loginButton = findViewById(R.id.button1);
@@ -78,51 +78,52 @@ public class LoginActivity extends AppCompatActivity {
         passwordText = findViewById(R.id.textView3);
         signIn = findViewById(R.id.textView4);
 
-        user_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected (AdapterView <?> parent , View view , int position , long id) {
 
-
-                switch (position)
-
-                {
-
-                    case 0:
-
-                        record = "admin";
-
-                        break;
-
-                    case 1:
-
-                        record = "teacher";
-
-                        break;
-
-                    case 2:
-
-                        record = "student";
-
-                        break;
-
-
-                }
-
-
-
-            }
-
-            @Override
-            public void onNothingSelected (AdapterView <?> parent) {
-
-            }
-        });
-
-        //[how to add a progress bar to the login activity while logging in?,Georges Badra]
-        mProgress =new ProgressDialog(this);
-        String titleId="Logging in...";
-        mProgress.setTitle(titleId);
-        mProgress.setMessage("Please Wait...");
+//        user_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+//            @Override
+//            public void onItemSelected (AdapterView <?> parent , View view , int position , long id) {
+//
+//
+//                switch (position)
+//
+//                {
+//
+//                    case 0:
+//
+//                        record = "admin";
+//
+//                        break;
+//
+//                    case 1:
+//
+//                        record = "teacher";
+//
+//                        break;
+//
+//                    case 2:
+//
+//                        record = "student";
+//
+//                        break;
+//
+//
+//                }
+//
+//
+//
+//            }
+//
+//            @Override
+//            public void onNothingSelected (AdapterView <?> parent) {
+//
+//            }
+//        });
+//
+//        //[how to add a progress bar to the login activity while logging in?,Georges Badra]
+//        mProgress =new ProgressDialog(this);
+//        String titleId="Logging in...";
+//        mProgress.setTitle(titleId);
+//        mProgress.setMessage("Please Wait...");
 
 
 
@@ -137,13 +138,19 @@ public class LoginActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
-                finish();
+
             }
         });
 
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,DashBoardActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+
+
+
                 String userN = userText.getText().toString();
                 if(TextUtils.isEmpty(userN)) {
                     userText.setError("InsertUsername");
