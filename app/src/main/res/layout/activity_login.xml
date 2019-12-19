@@ -95,6 +95,7 @@
                 android:background="#0000FF"
                 android:text="@string/login"
 
+                android:textColor="@android:color/background_light"
                 tools:textSize="18sp" />
 
         </RelativeLayout>
