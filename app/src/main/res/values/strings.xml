@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">  बचत पासबुक</string>
-    <string name="username">खाता खोलेको नाम </string>
-    <string name="password"> पास्वोर्ड</string>
+    <string name="username"> \u0020\u0020खाता खोलेको नाम </string>
+    <string name="password">    \u0020\u0020 पास्वोर्ड</string>
     <string name="title_activity_login">लागिन विवरण </string>
     <!-- Strings related to login -->
     <string name="login">बुजाउनोस </string>

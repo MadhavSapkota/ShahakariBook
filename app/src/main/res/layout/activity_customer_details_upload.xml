@@ -29,12 +29,12 @@
 
             <EditText
                 android:id="@+id/editText7"
-                android:layout_width="363dp"
-                android:layout_height="wrap_content"
+                android:layout_width="351dp"
+                android:layout_height="50dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
                 android:fontFamily="serif"
-                android:hint=" खातावालको नाम "
-
+                android:hint="\u0020\u0020 खातावालको नाम "
                 android:inputType="textPersonName"
                 android:textColor="@color/common_google_signin_btn_text_light_pressed"
                 android:typeface="sans"
@@ -42,30 +42,33 @@
 
             <EditText
                 android:id="@+id/editText5"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
+                android:layout_width="353dp"
+                android:layout_height="49dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
                 android:fontFamily="serif"
-                android:hint="फोन नम्बर"
+                android:hint="\u0020\u0020फोन नम्बर"
                 android:inputType="textPersonName"
                 android:typeface="sans" />
 
 
             <EditText
                 android:id="@+id/editText6"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
+                android:layout_width="354dp"
+                android:layout_height="54dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
-                android:hint="ठेगाना"
+                android:hint="\u0020\u0020ठेगाना"
                 android:inputType="textPersonName" />
 
 
             <EditText
                 android:id="@+id/editText12"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
+                android:layout_width="351dp"
+                android:layout_height="55dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
-                android:hint="जम्मा गरेको मिति"
+                android:hint="\u0020\u0020जम्मा गरेको मिति"
                 android:inputType="textPersonName" />
 
 

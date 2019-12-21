@@ -10,29 +10,29 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="373dp"
-        android:layout_height="87dp"
+        android:layout_width="398dp"
+        android:layout_height="84dp"
         android:layout_marginTop="84dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shahakari" />
+        app:srcCompat="@drawable/reading" />
 
     <EditText
         android:id="@+id/textView2"
         android:layout_width="200dp"
         android:layout_height="40dp"
-
         android:autofillHints="on"
+        android:background="@drawable/et_style"
         android:drawableStart="@drawable/ic_action_user"
         android:drawableLeft="@drawable/ic_action_user"
         android:hint="@string/username"
-        android:inputType="none|text"
+        android:inputType="text"
         android:text=""
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textStyle="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,16 +50,18 @@
         android:layout_width="200sp"
         android:layout_height="40sp"
         android:autofillHints="on"
+        android:background="@drawable/et_style"
         android:drawableStart="@drawable/ic_action_lock"
         android:drawableLeft="@drawable/ic_action_lock"
         android:hint="@string/password"
-        android:inputType="none|textPassword"
+        android:inputType="textPassword"
         android:text=""
-        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
+
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
@@ -103,19 +105,6 @@
 
     </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:text="@string/not_a_user"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.875" />
-
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="30dp"
@@ -138,5 +127,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="17dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="216dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_secure" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        app:srcCompat="@drawable/teachers" />
 
 </android.support.constraint.ConstraintLayout>
